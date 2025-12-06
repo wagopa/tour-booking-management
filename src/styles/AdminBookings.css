@@ -1,0 +1,173 @@
+.admin-bookings-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  min-height: calc(100vh - 200px);
+}
+
+.admin-bookings-title {
+  font-size: 32px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.admin-bookings-button {
+  background-color: #0D92FF;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+  margin-bottom: 20px;
+}
+
+.admin-bookings-button:hover {
+  opacity: 0.8;
+}
+
+.admin-bookings-button.cancel {
+  background-color: #ff0000;
+}
+
+.admin-bookings-button.edit {
+  background-color: #28a745;
+  margin-right: 10px;
+}
+
+.admin-bookings-form {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: #0D92FF;
+  box-shadow: 0 0 5px rgba(13, 146, 255, 0.5);
+}
+
+.form-error {
+  color: #ff0000;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.form-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.admin-bookings-section {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.admin-bookings-section h3 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.admin-bookings-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.admin-bookings-table th,
+.admin-bookings-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+  font-size: 16px;
+  color: #333;
+}
+
+.admin-bookings-table th {
+  background-color: #f5f5f5;
+  font-weight: 600;
+}
+
+.admin-bookings-table td {
+  vertical-align: middle;
+}
+
+@media (max-width: 768px) {
+  .admin-bookings-title {
+    font-size: 28px;
+  }
+
+  .admin-bookings-section h3 {
+    font-size: 20px;
+  }
+
+  .admin-bookings-table th,
+  .admin-bookings-table td {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .admin-bookings-button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  .form-group input,
+  .form-group select {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  .admin-bookings-container {
+    padding: 20px;
+  }
+
+  .admin-bookings-title {
+    font-size: 24px;
+  }
+
+  .admin-bookings-table {
+    display: block;
+    overflow-x: auto;
+  }
+
+  .admin-bookings-table th,
+  .admin-bookings-table td {
+    min-width: 120px;
+  }
+}

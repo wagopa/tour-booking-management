@@ -1,0 +1,252 @@
+.admin-tours-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  min-height: calc(100vh - 200px);
+}
+
+.admin-tours-title {
+  font-size: 32px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.admin-tours-button {
+  background-color: #0D92FF;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+  margin-bottom: 20px;
+}
+
+.admin-tours-button:hover {
+  opacity: 0.8;
+}
+
+.admin-tours-button.cancel {
+  background-color: #ff0000;
+}
+
+.admin-tours-button.add {
+  background-color: #28a745;
+  margin-left: 10px;
+  padding: 8px 16px;
+}
+
+.admin-tours-button.edit {
+  background-color: #28a745;
+  margin-right: 10px;
+}
+
+.admin-tours-button.delete {
+  background-color: #ff0000;
+}
+
+.admin-tours-form {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+}
+
+.form-group input[type="file"],
+.form-group input[type="date"] {
+  padding: 3px;
+}
+
+.form-group textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+  border-color: #0D92FF;
+  box-shadow: 0 0 5px rgba(13, 146, 255, 0.5);
+}
+
+.form-error {
+  color: #ff0000;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.array-input {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.array-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+.array-item span {
+  font-size: 16px;
+  color: #333;
+}
+
+.itinerary-day {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+}
+
+.itinerary-day-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.itinerary-day-header span {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+}
+
+.form-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.admin-tours-section {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.admin-tours-section h3 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.admin-tours-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.admin-tours-table th,
+.admin-tours-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+  font-size: 16px;
+  color: #333;
+}
+
+.admin-tours-table th {
+  background-color: #f5f5f5;
+  font-weight: 600;
+}
+
+.admin-tours-table td {
+  vertical-align: middle;
+}
+
+@media (max-width: 768px) {
+  .admin-tours-title {
+    font-size: 28px;
+  }
+
+  .admin-tours-section h3 {
+    font-size: 20px;
+  }
+
+  .admin-tours-table th,
+  .admin-tours-table td {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .admin-tours-button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  .form-group input,
+  .form-group textarea,
+  .form-group select {
+    font-size: 14px;
+  }
+
+  .array-input {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .array-input input,
+  .array-input button {
+    width: 100%;
+  }
+
+  .array-input button {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .admin-tours-container {
+    padding: 20px;
+  }
+
+  .admin-tours-title {
+    font-size: 24px;
+  }
+
+  .admin-tours-table {
+    display: block;
+    overflow-x: auto;
+  }
+
+  .admin-tours-table th,
+  .admin-tours-table td {
+    min-width: 120px;
+  }
+}

@@ -1,0 +1,183 @@
+.profile-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  min-height: calc(100vh - 200px);
+}
+
+.profile-title {
+  font-size: 32px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.profile-content {
+  display: flex;
+  gap: 40px;
+}
+
+.profile-info,
+.profile-bookings {
+  flex: 1;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-info h3,
+.profile-bookings h3 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.profile-info p {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.profile-info p strong {
+  color: #333;
+}
+
+.profile-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+}
+
+.form-group input:focus {
+  border-color: #0D92FF;
+  box-shadow: 0 0 5px rgba(13, 146, 255, 0.5);
+}
+
+.profile-error {
+  color: #ff0000;
+  font-size: 14px;
+  margin-top: 5px;
+  display: block;
+}
+
+.form-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.profile-button {
+  background-color: #0D92FF;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none; /* Để NavLink không có gạch chân */
+  transition: opacity 0.3s ease;
+}
+
+.profile-button:hover {
+  opacity: 0.8;
+}
+
+.profile-button.cancel {
+  background-color: #ff0000;
+}
+
+.profile-button.pay {
+  background-color: #28a745; /* Màu xanh lá cho nút Thanh toán */
+}
+
+.booking-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.bookings-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.booking-item {
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 5px;
+  border: 1px solid #eee;
+}
+
+.booking-item h4 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.booking-item p {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+  .profile-content {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .profile-title {
+    font-size: 28px;
+  }
+
+  .profile-info h3,
+  .profile-bookings h3 {
+    font-size: 20px;
+  }
+
+  .profile-button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  .booking-actions {
+    flex-direction: column;
+    gap: 8px;
+  }
+}
+
+@media (max-width: 576px) {
+  .profile-container {
+    padding: 20px;
+  }
+
+  .profile-title {
+    font-size: 24px;
+  }
+}
