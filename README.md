@@ -1,12 +1,19 @@
-# React + Vite
+# Hệ Thống Quản Lý Đặt Tour Du Lịch
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Tổng quan dự án
 
-Currently, two official plugins are available:
+Hệ thống quản lý đặt tour du lịch được xây dựng sử dụng **ReactJS, CSS** cho phần giao diện người dùng
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. **Khách hàng (Customer)**  
+   - Đăng ký/Đăng nhập tài khoản
+   - Quản lý thông tin tài khoản
+   - Tìm kiếm tour mong muốn (theo tên, điểm khởi hành, thời gian)
+   - Xem danh sách tour và chi tiết tour 
+   - Lọc tour theo giá
+   - Đặt tour
+   - Quản lý đơn đặt (thanh toán, hủy tour)
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+2. **Nhân viên quản trị (Admin)**  
+   - Quản lý thông tin người dùng (thêm, sửa, xóa)
+   - Quản lý đơn đặt tour (thêm, sửa, xóa)
+   - Quản lý thông tin tour (thêm, sửa, xóa)
